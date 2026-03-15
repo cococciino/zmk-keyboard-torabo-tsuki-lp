@@ -2,9 +2,22 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-trackball_listener: trackball_listener {
-    compatible = "zmk,input-listener";
+/* split_listener の下に trackball_listener を置く */
+&split_listener {
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+
+        scroller {
+            layers = <1>;
+            input-processors = <
+                &zip_xy_transform INPUT_TRANSFORM_X_INVERT
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_scaler 1 45
+            >;
+        };
+    };
 };
+
 
 &pointing_listener {
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
@@ -33,15 +46,4 @@ trackball_listener: trackball_listener {
 /*キー入力中のオートマウスレイヤー誤爆防止*/  //auto
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
-};
-
-&trackball_listener {
-    scroller {
-        layers = <1>;
-        input-processors = <
-            &zip_xy_transform INPUT_TRANSFORM_X_INVERT
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 45
-        >;
-    };
 };
