@@ -47,6 +47,11 @@
             bindings = <&kp J>;
             key-positions = <33 35>;
         };
+
+        lll {
+            bindings = <&kp L>;
+            key-positions = <35>;
+        };
     };
 
     keymap {
