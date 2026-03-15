@@ -59,21 +59,21 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans                  &trans  &trans     &trans          &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans                  &trans  &trans     &trans          &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &kp UP_ARROW    &mkp MB2   &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans     &trans          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &kp UP_ARROW    &mkp MB2   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans          &trans     &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans        &trans           &trans           &trans           &trans                                     &trans                 &trans           &trans         &trans             &trans                &trans
-&trans  &kp JP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_LPAREN                &kp JP_RPAREN  &kp EXCLAMATION  &kp JP_AMPERSAND  &kp DOLLAR         &kp NON_US_BACKSLASH  &trans
-&trans  &kp JP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_LBRACKET          &trans  &trans   &kp JP_RBRACKET      &kp PERCENT      &kp JP_QUOTE         &kp JP_DQUOTE  &kp JP_AT           &trans
-&trans  &kp PERCENT      &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3        &kp JP_LBRACE              &trans  &trans   &kp JP_RBRACE               &kp JP_UNDERSCORE   &kp SEMICOLON  &kp JP_COLON          &kp QUESTION          &trans
-&trans  &kp JP_EQUAL       &kp KP_NUMBER_0  &trans           &trans           &trans                    &trans  &kp DEL  &kp TAB                &trans           &trans         &trans             &trans                &trans
+&trans  &trans           &trans           &trans           &trans           &trans                            &trans           &trans             &trans            &trans         &trans                &trans
+&trans  &kp JP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_LPAREN                     &kp JP_RPAREN    &kp EXCLAMATION    &kp JP_AMPERSAND  &kp DOLLAR     &kp NON_US_BACKSLASH  &trans
+&trans  &kp JP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_LBRACKET  &trans  &trans   &kp JP_RBRACKET  &kp PERCENT        &kp JP_QUOTE      &kp JP_DQUOTE  &kp JP_AT             &trans
+&trans  &kp FSLH         &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3        &kp JP_LBRACE    &trans  &trans   &kp JP_RBRACE    &kp JP_UNDERSCORE  &kp SEMICOLON     &kp JP_COLON   &kp QUESTION          &trans
+&trans  &kp JP_EQUAL     &kp KP_NUMBER_0  &trans           &trans           &trans           &trans  &kp DEL  &kp TAB          &trans             &trans            &trans         &trans                &trans
             >;
         };
 
