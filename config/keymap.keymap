@@ -42,6 +42,21 @@
             key-positions = <28 29>;
             layers = <2>;
         };
+
+        test {
+            bindings = <&kp J>;
+            key-positions = <33 35>;
+        };
+
+        lll {
+            bindings = <&kp L>;
+            key-positions = <35>;
+        };
+
+        jl {
+            bindings = <&kp J>;
+            key-positions = <33 35>;
+        };
     };
 
     keymap {
