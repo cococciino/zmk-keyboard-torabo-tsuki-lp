@@ -17,3 +17,27 @@
 &size_l_transform {
     col-offset = <7>;
 };
+
+/*非マウスキーを押したらタイムアウトに関係なくマウスレイヤーを抜ける*/ //atuo
+&zip_temp_layer {
+    excluded-positions = <
+        19 // J or L
+        21 // J or L
+    >;
+};
+
+/*キー入力中のオートマウスレイヤー誤爆防止*/  //auto
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
+
+&trackball_listener {
+    scroller {
+        layers = <1>;
+        input-processors = <
+            &zip_xy_transform INPUT_TRANSFORM_X_INVERT
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_scaler 1 45
+        >;
+    };
+};
