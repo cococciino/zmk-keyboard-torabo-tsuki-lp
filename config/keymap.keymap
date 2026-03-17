@@ -52,7 +52,7 @@
 &trans  &trans     &trans    &trans    &trans                          &trans                                             &trans       &trans  &trans     &trans             &trans                &trans
 &trans  &kp Q      &kp W     &kp E     &kp R                           &kp T                                              &kp Y        &kp U   &kp I      &kp O              &kp P                 &trans
 &trans  &kp A      &kp S     &kp D     &kp F                           &kp G        &trans                 &trans         &kp H        &kp J   &kp K      &kp L              &kp MINUS             &trans
-&trans  &kp Z      &kp X     &kp C     &kp V                           &kp B        &kp SPACE              &kp TAB        &kp N        &kp M   &kp COMMA  &kp DOT            &mt RIGHT_SHIFT FSLH  &trans
+&trans  &kp Z      &kp X     &kp C     &kp V                           &kp B        &kp LG(TAB)            &kp TAB        &kp N        &kp M   &kp COMMA  &kp DOT            &mt RIGHT_SHIFT FSLH  &trans
 &trans  &kp LCTRL  &kp LGUI  &kp LALT  &mt LEFT_SHIFT INTERNATIONAL_5  &lt 3 SPACE  &lt 4 INTERNATIONAL_4  &kp BACKSPACE  &lt 2 ENTER  &trans  &trans     &lt 4 PRINTSCREEN  &kp ESCAPE            &trans
             >;
         };
